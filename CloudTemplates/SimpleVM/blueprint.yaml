@@ -1,0 +1,23 @@
+formatVersion: 1
+resources:
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    metadata:
+      layoutPosition:
+        - 0
+        - 1
+    properties:
+      image: UBUNTU20
+      cpuCount: 1
+      totalMemoryMB: 2048
+      ignoreActiveDirectory: true
+      folderName: VRA Evaluation VMss
+      tags:
+        - key: Location
+      networks:
+        - network: ${resource.Cloud_vSphere_Network_1.id}
+  Cloud_vSphere_Network_1:
+    type: Cloud.vSphere.Network
+    properties:
+      networkType: existing
+      constraints: null
