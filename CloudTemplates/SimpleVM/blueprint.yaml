@@ -1,5 +1,5 @@
 name: Simple VM
-version: 0.1.0
+version: 0.1.2
 formatVersion: 1
 resources:
   Cloud_vSphere_Machine_1:
@@ -9,7 +9,7 @@ resources:
         - 0
         - 1
     properties:
-      image: UBUNTU20
+      image: LINUX
       cpuCount: 1
       totalMemoryMB: 2048
       ignoreActiveDirectory: true
